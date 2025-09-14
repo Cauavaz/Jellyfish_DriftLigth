@@ -1,0 +1,35 @@
+.sectionDev {
+    background: url('/public/img/jellyfish_background_2.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 400px; /* ou qualquer altura desejada */
+    position: relative; /* necessário se quiser usar absolute em filhos */
+}
+
+.filtro_cor {
+    /* background: linear-gradient(155deg, #16171aab -9%, #16171a 73%); */
+    background: linear-gradient(8deg, #16171aab -8%, #16171a 60%);
+    width: 100%;
+    height: 25rem; /* agora cobre toda a seção */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+  
+  .sectionDev h2 {
+    color: #2c3e50;
+    margin-bottom: 0rem;
+  }
+  
+  .sectionDev p {
+    color: #7f8c8d;
+    line-height: 1.6;
+  }
+
+
+  
+
+

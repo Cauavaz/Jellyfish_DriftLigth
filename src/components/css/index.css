@@ -1,0 +1,173 @@
+/* Estilos base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Estilo do plano de fundo */
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  /* background: url(/public/img/arquivoweb.png); */
+  background: url('/public/img/jellyfish_background_2.jpg') no-repeat center center;
+
+}
+
+#bg-image {
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;   
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  z-index: 2; /* Fica acima da imagem */
+  /* background: linear-gradient(155deg, #16171aab 12%, #16171a 41%); */
+  /* background: linear-gradient(155deg, #16171aab -9%, #16171a 30%); */
+  /* background: linear-gradient(155deg, #16171aab -9%, #16171a 73%); */
+  background: linear-gradient(155deg, #16171aab -37%, #16171a 40%);
+}
+
+
+
+/* Garante que o conteúdo fique acima de tudo */
+#root {
+  position: relative;
+  z-index: 3;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  text-align: center;
+  width: 100%;
+  justify-content:space-between;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.header {
+  width: 93%;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.content {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-top: 0.3px solid #ffffff2e; /* borda preta de 2px */
+  box-sizing: border-box; /* garante que a largura inclua a borda */
+  height: 88vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content2{
+  color: #ffffff;
+  width: 25%;
+}
+
+.content1 {
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.alinhamento-video {
+  position: absolute;
+  top: 24rem;
+  left: 43rem;
+  width: 100%;
+  height: 35rem;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.alinhamento-video video {
+  width: 69rem;
+  height: 32rem;
+  object-fit: cover; /* Ensures video covers the container while maintaining aspect ratio */
+  display: block;
+}
+
+.hero-title {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 20px;
+  color: transparent;
+-webkit-text-stroke:  1px black;    
+font-size: 9rem;
+}
+
+/* .hero-title {
+  background: url('/public/img/arquivoweb2.jpg') no-repeat center center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+
+
+/* vídeo ocupa todo o espaço do texto */
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* o texto vai virar a "máscara" */
+  -webkit-mask-image: none;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: cover;
+}
+
+/* o texto em si serve de máscara */
+.text {
+  font-size: 9rem;
+  font-weight: bold;
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0; 
+}
+

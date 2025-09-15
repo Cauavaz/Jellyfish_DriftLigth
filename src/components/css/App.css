@@ -55,3 +55,32 @@
     transform: rotate(360deg);
   }
 }
+
+
+.custom-scrollbar {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+
+.scroll-thumb {
+  width: 100%;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+  background-size: 300% 300%;
+  border-radius: 10px;
+  transition: all 0.3s 
+ease;
+  position: relative;
+  overflow: hidden;
+  animation: gradientShift 3s 
+ease-in-out infinite;
+}

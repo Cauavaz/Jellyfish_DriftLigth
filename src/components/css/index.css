@@ -24,7 +24,13 @@ body {
   overflow: hidden;
   /* background: url(/public/img/arquivoweb.png); */
   background: url('/public/img/jellyfish_background_2.jpg') no-repeat center center;
+}
 
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0194ef #16171a;
 }
 
 #bg-image {

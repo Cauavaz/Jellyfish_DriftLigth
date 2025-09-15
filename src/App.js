@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <p>menu header</p>
-        <p>menu header</p>
+        <p className="header-text">Info</p>
+        <p className="header-text">Menu</p>
       </div>
       <Header />  
       <SectionDev />

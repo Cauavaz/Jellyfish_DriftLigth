@@ -2,6 +2,9 @@
 import './components/css/index.css';
 import Header from './header';
 import SectionDev from './components/SectionDev';
+import SectionProjects from './components/SectionProjects';
+import SectionAbout from './components/SectionAbout';
+import SectionContact from './components/SectionContact';
 import './components/css/scrollbar.css';
 
 function App() {
@@ -40,6 +43,9 @@ function App() {
         </div>
         <Header />  
         <SectionDev />
+        <SectionProjects />
+        <SectionAbout />
+        <SectionContact />
       </div>
   );
 }

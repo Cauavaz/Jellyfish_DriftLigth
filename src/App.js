@@ -1,7 +1,6 @@
 // src/App.js
 import './components/css/index.css';
 import Header from './header';
-import SectionDev from './components/SectionDev';
 import SectionProjects from './components/SectionProjects';
 import SectionAbout from './components/SectionAbout';
 import SectionContact from './components/SectionContact';
@@ -42,10 +41,9 @@ function App() {
           <p className="header-text">Menu</p>
         </div>
         <Header />  
-        <SectionDev />
         <SectionProjects />
         <SectionAbout />
-        <SectionContact />
+        
       </div>
   );
 }

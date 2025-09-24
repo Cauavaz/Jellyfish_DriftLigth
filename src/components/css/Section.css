@@ -21,33 +21,15 @@
   padding: 0 2rem;
 }
 
-/* Seção de Desenvolvimento */
-.sectionDev {
-    background: url('/public/img/jellyfish_background_2.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    min-height: 50rem;
-    position: relative;
-}
 
 /* Seção de Projetos */
 .sectionProjects {
-    background: linear-gradient(135deg, var(--neutral-dark) 0%, var(--neutral-medium) 50%, var(--neutral-light) 100%);
+    /* Container para a animação de scroll horizontal com timeline */
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden; /* Esconde os painéis que estão fora da tela */
     position: relative;
-    padding: 5rem 0;
 }
-
-/* Seção Sobre Mim */
-.sectionAbout {
-    background: linear-gradient(45deg, var(--neutral-medium) 0%, var(--neutral-dark) 50%, var(--primary-blue)15 100%);
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    padding: 5rem 0;
-}
-
 /* Seção de Contato */
 .sectionContact {
     background: linear-gradient(-45deg, var(--neutral-light) 0%, var(--neutral-medium) 50%, var(--analogous-cyan)15 100%);
@@ -109,7 +91,60 @@
 }
 
   
-/* ========== SEÇÃO DE PROJETOS ========== */
+/* ========== SEÇÃO DE PROJETOS (TIMELINE + SNAP) ========== */
+.projects-track {
+    display: flex; /* Alinha os painéis lado a lado */
+    width: 400vw; /* 4 painéis x 100vw cada = 400vw total */
+    height: 100vh;
+    will-change: transform; /* Otimização de performance */
+}
+
+.project-panel {
+    width: 100vw; /* Cada painel ocupa a largura total da tela */
+    height: 100vh; /* Cada painel ocupa a altura total da tela */
+    flex-shrink: 0; /* Impede que os painéis encolham */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* Cores diferentes para cada painel */
+.panel-1 { 
+    background: linear-gradient(135deg, var(--neutral-dark) 0%, var(--neutral-medium) 100%); 
+}
+.panel-2 { 
+    background: linear-gradient(135deg, #2d1b69 0%, #4a1e9e 100%); 
+}
+.panel-3 { 
+    background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%); 
+}
+.panel-4 { 
+    background: linear-gradient(135deg, var(--neutral-light) 0%, var(--primary-blue) 100%); 
+}
+
+.project-panel h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, var(--primary-blue), var(--analogous-cyan), var(--triadic-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.project-panel p {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* ========== SEÇÃO DE PROJETOS (ANTIGO) ========== */
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -230,12 +265,23 @@
 }
 
 /* ========== SEÇÃO SOBRE MIM ========== */
-.about-content {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 4rem;
-    align-items: start;
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Joga o vídeo para trás de todo o conteúdo */
 }
+
+.sectionAbout .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* A regra .about-content foi removida pois estava vazia. */
 
 .about-description {
     margin: 2rem 0;
@@ -290,11 +336,16 @@
 }
 
 .profile-card {
+    width: 100%;
+    height: 100%;
     background: rgba(255, 255, 255, 0.05);
-    border-radius: 25px;
+    border-radius: 0; /* Remove o raio para preencher os cantos */
     padding: 2rem;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -514,19 +565,3 @@
 }
 
 /* Estilos legados para seção de desenvolvimento */
-.sectionDev h2 {
-    color: #2c3e50;
-    margin-bottom: 0rem;
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-.sectionDev p {
-    color: #7f8c8d;
-    line-height: 1.6;
-    font-size: 1.2rem;
-    text-align: center;
-    max-width: 600px;
-    margin: 1rem auto;
-}

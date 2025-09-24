@@ -12,7 +12,11 @@ export default function Header() {
           </div>
       </div>
       </div>
-      <div className="content2">Aqui vai o conteúdo da página abaixo do menu/header.</div>
+      <div className="content2">
+            <video autoPlay muted loop playsInline className="video" id="video">
+              <source src="/video/FINAL.webm" type="video/webm" />
+            </video> 
+        </div>
     </div>
   );
 }

@@ -89,6 +89,7 @@ code {
   display: flex;
   justify-content: space-between;
   font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
 
 }
 
@@ -96,20 +97,19 @@ code {
 .content {
   width: 100%;
   padding: 1rem 2rem;
-  border-top: 0.3px solid #ffffff2e; /* borda preta de 2px */
   box-sizing: border-box; /* garante que a largura inclua a borda */
-  height: 93vh;
+  height: 95vh;
   display: flex;
   justify-content: space-around;
 }
 
 .content2{
   color: #ffffff;
-  width: 25%;
+  width: 30%;
 }
 
 .content1 {
-  width: 100%;
+  width:70%;
   color: #ffffff;
   display: flex;
   align-items: center;

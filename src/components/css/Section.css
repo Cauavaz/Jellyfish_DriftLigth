@@ -190,10 +190,7 @@
     margin-bottom: 1rem;
 }
 
-.project-content {
-    padding: 2rem;
-    width: 43vw;
-}
+
 
 .project-content p {
     color: var(--text-muted);
@@ -669,30 +666,174 @@
 
 .div-tras {
     content: '01';
-    position: absolute;
     font-family: 'Roslindale-DisplayExtraLight-Testing';
-    font-size: 28vw;
+    font-size: 26vw;
     font-weight: 100;
     color: #0194ef;
     /* color: #0194ef08; */
+    z-index: 0;
+    width: 70%;
+    line-height: 1;
+    pointer-events: none;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.div-tras1 {
+    content: '01';
+    font-family: 'Roslindale-DisplayExtraLight-Testing';
+    font-size: 26vw;
+    font-weight: 100;
+    color: #0194ef;
+    /* color: #0194ef08; */
+    z-index: 0;
+    width: 30%;
+    line-height: 1;
+    pointer-events: none;
+    display: flex
+;
+    align-items: center;
+    justify-content: end;
+    text-align: left;
+    flex-direction: column;
+    width: 23vw;
+    font-size: .8vw;
+    font-weight: 400;
+    line-height: .9vw;
+    /* gap: 4%; */
+    padding: 7rem 0rem;
+}
+
+/* teste transparente */
+/*.div-tras {
+    position: absolute;
+    font-family: 'Roslindale Variable Display Condensed', serif;
+    font-size: 28vw;
+    font-weight: 100;
+    font-variation-settings: 'wght' 50; 
+    -webkit-text-stroke: 0.3px #0194ef; 
+    text-stroke: 0.3px #0194ef;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+    color: transparent; 
     z-index: 0;
     bottom: 8%;
     right: 76%;
     line-height: 1;
     pointer-events: none;
-}
+    opacity: 0.9; 
+}    
+*/
+
 .span-tras {
     font-size: 18vw;
     font-weight: 100;
     color: #0194ef;
     /* color: #0194ef08; */
     z-index: 0;
-    bottom: 28%;
-    right: 26%;
     line-height: 1;
     pointer-events: none;
 }
 
+
+
+.project-content {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 4rem;
+}
+.project-content2 {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
 .panel-1 {
     background: linear-gradient(175deg, #16171a00 45%, #16213e 123%);
+}
+
+
+.div-trast {
+    content: '01';
+    font-family: 'Roslindale-DisplayExtraLight-Testing';
+    font-size: 26vw;
+    font-weight: 100;
+    color: #0194ef;
+    /* color: #0194ef08; */
+    z-index: 0;
+    width: 70%;
+    line-height: 1;
+    pointer-events: none;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.div-trast1 {
+    content: '01';
+    font-family: 'Roslindale-DisplayExtraLight-Testing';
+    font-size: 9vw;
+    font-weight: 100;
+    /* color: #0194ef08; */
+    z-index: 0;
+    width: 100%;
+    line-height: 1;
+    pointer-events: none;
+    font-variation-settings: 'wght' 50;
+    -webkit-text-stroke: 2px #0194ef59;
+    text-stroke: 0.3px #0194ef;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: transparent;
+    opacity: 0.9;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+
+.div-trast2 {
+    content: '01';
+    font-family: 'Roslindale-DisplayExtraLight-Testing';
+    font-size: 9vw;
+    font-weight: 100;
+    /* color: #0194ef08; */
+    z-index: 0;
+    width: 100%;
+    line-height: 1;
+    pointer-events: none;
+    font-variation-settings: 'wght' 50;
+    -webkit-text-stroke: 2px #0194ef59;
+    text-stroke: 0.3px #0194ef;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: transparent;
+    opacity: 0.9;
+    justify-content: inherit;
+    align-items: center;
+    display: flex;
+
+}
+.span-trast1 {
+    text-transform: uppercase;
+    margin-top: -1vw;
+    margin-bottom: 0;
+    font-family: Founders Grotesk, sans-serif;
+    font-size: 9vw;
+    font-weight: 400;
+    line-height: 11vw;
+}
+
+.span-trast2 {
+    text-transform: uppercase;
+    margin-top: -1vw;
+    margin-bottom: 0;
+    font-family: Founders Grotesk, sans-serif;
+    font-size: 9vw;
+    font-weight: 400;
+    line-height: 11vw;
 }

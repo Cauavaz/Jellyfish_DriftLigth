@@ -64,12 +64,21 @@ const SectionProjects = () => {
         {/* Cada painel é uma tela cheia */}
         <div className="project-panel panel-1">
           <div className="project-content">
-            <div>
-              <div className="div-tras">2 mil<span className="span-tras">+</span></div>
-              {/* <span className="text-principal">
-                A questão é: ficamos felizes em supor que nosso neto nunca poderá
-                ver um elefante, exceto em um livro ilustrado?
-              </span> */}
+             <div className="div-trast1">
+              <span className='span-trast1'>Support </span>
+              <span className='span-trast2'>animals</span>
+            </div>
+          </div>
+          <div className="div-trast2">
+             <span className='span-trast2'>Support</span>
+             <span className='span-trast2'>animals</span>
+            </div>
+          <div className="project-content2">
+            <div className="div-tras1">
+              <span >   CRITICALDANGER É TRAZIDO A VOCÊ POR ALGUÉM
+              EM PARCERIA COM ILUSTRADORES E ARTISTAS QUE ACREDITAM NA CAUSA, 100% DOS LUCROS DA CRITICALDANGER SERÃO DOADOS DIRETAMENTE PARA NOSSAS INSTITUIÇÕES DE CARIDADE ESCOLHIDAS. TODAS AS INSTITUIÇÕES DE CARIDADE QUE APO. </span>
+            </div>
+            <div className="div-tras">2 mil<span className="span-tras">+</span>
             </div>
           </div>
         </div>

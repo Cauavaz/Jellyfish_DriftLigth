@@ -70,12 +70,12 @@ const SectionProjects = () => {
             </div>
           </div>
           <div className="div-trast2">
-             <span className='span-trast2'>Support</span>
-             <span className='span-trast2'>animals</span>
+             <span className='span-trast3'>Support</span>
+             <span className='span-trast4'>animals</span>
             </div>
           <div className="project-content2">
             <div className="div-tras1">
-              <span >   CRITICALDANGER É TRAZIDO A VOCÊ POR ALGUÉM
+              <span className='span-tras1'>CRITICALDANGER É TRAZIDO A VOCÊ POR ALGUÉM
               EM PARCERIA COM ILUSTRADORES E ARTISTAS QUE ACREDITAM NA CAUSA, 100% DOS LUCROS DA CRITICALDANGER SERÃO DOADOS DIRETAMENTE PARA NOSSAS INSTITUIÇÕES DE CARIDADE ESCOLHIDAS. TODAS AS INSTITUIÇÕES DE CARIDADE QUE APO. </span>
             </div>
             <div className="div-tras">2 mil<span className="span-tras">+</span>

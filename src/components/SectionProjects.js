@@ -60,26 +60,39 @@ const SectionProjects = () => {
     <section className="sectionProjects" ref={containerRef}>
       {/* O trilho que se moverá horizontalmente */}
       <div className="projects-track" ref={trackRef}>
+        
         {/* Cada painel é uma tela cheia */}
         <div className="project-panel panel-1">
-          <h1>Projeto Um</h1>
-          <p>Primeiro projeto com tecnologias modernas</p>
+          <div className="project-content">
+            <div>
+              <div className="div-tras">2 mil<span className="span-tras">+</span></div>
+              {/* <span className="text-principal">
+                A questão é: ficamos felizes em supor que nosso neto nunca poderá
+                ver um elefante, exceto em um livro ilustrado?
+              </span> */}
+            </div>
+          </div>
         </div>
+  
         <div className="project-panel panel-2">
           <h1>Projeto Dois</h1>
           <p>Segundo projeto com design inovador</p>
         </div>
+  
         <div className="project-panel panel-3">
           <h1>Projeto Três</h1>
           <p>Terceiro projeto com funcionalidades avançadas</p>
         </div>
+  
         <div className="project-panel panel-4">
           <h1>Projeto Quatro</h1>
           <p>Quarto projeto com performance otimizada</p>
         </div>
+  
       </div>
     </section>
   );
+  
 };
 
 export default SectionProjects;
